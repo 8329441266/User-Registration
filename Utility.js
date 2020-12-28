@@ -43,13 +43,13 @@ class Utility{
         }
         return PHONE_NUMBER_PATTERN;
     }
-    password_validation = (password) => {
-        let PASSWORD_PATTERN = new RegExp("[a-zA-Z0-9]{8,40}");
+    passwordValidator(password) {
+        let PASSWORD_PATTERN = new RegExp("[a-zA-Z0-9](?=.*[A-Z]).{8,40}");
 
         if (PASSWORD_PATTERN.test(password)) {
             console.log("valid Password");
         }
-        else{
+        else {
             console.log("Invalid Password");
         }
         return PASSWORD_PATTERN;
