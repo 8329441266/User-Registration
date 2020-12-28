@@ -9,3 +9,5 @@ var email = readlineSync.question( "Enter email address : ");
 util.emailAddress(email);
 var phoneNumber= readlineSync.question( "Enter Mobile Number : ");
 util.phoneNumber(phoneNumber);
+var password = readlineSync.question( "Enter password : ");
+util.password_validation(password);

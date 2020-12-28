@@ -38,10 +38,21 @@ class Utility{
         if (PHONE_NUMBER_PATTERN.test(phoneNumber)) {
             console.log("valid Phone Number");
         }
-        else {
+        else{
             console.log("Invalid Phone Number");
         }
         return PHONE_NUMBER_PATTERN;
+    }
+    password_validation = (password) => {
+        let PASSWORD_PATTERN = new RegExp("[a-zA-Z0-9]{8,40}");
+
+        if (PASSWORD_PATTERN.test(password)) {
+            console.log("valid Password");
+        }
+        else{
+            console.log("Invalid Password");
+        }
+        return PASSWORD_PATTERN;
     }
 }
 module.exports = new Utility();
