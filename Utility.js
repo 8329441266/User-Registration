@@ -32,5 +32,16 @@ class Utility{
         }
         return EMAIL_PATTERN;
     }
+    phoneNumber = (phoneNumber) => {
+        let PHONE_NUMBER_PATTERN = new RegExp("^([0-9]{2}[ ]+)?[0-9]{10}$");
+
+        if (PHONE_NUMBER_PATTERN.test(phoneNumber)) {
+            console.log("valid Phone Number");
+        }
+        else {
+            console.log("Invalid Phone Number");
+        }
+        return PHONE_NUMBER_PATTERN;
+    }
 }
 module.exports = new Utility();

@@ -7,3 +7,5 @@ var lName = readlineSync.question( "Enter Last name : ");
 util.lastName(lName);
 var email = readlineSync.question( "Enter email address : ");
 util.emailAddress(email);
+var phoneNumber= readlineSync.question( "Enter Mobile Number : ");
+util.phoneNumber(phoneNumber);
